@@ -1,0 +1,11 @@
+def reverse(n,rev=0):
+    if(n==0):
+        return rev
+    else:
+        rem=n%10
+        rev=rev*10+rem
+        return reverse(n//10,rev)
+
+num=9696
+revu=reverse(num)
+print("Reverse number is :",revu)
