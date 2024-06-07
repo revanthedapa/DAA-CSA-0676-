@@ -1,0 +1,14 @@
+def arm(n):
+    temp=n
+    rem=0
+    sum=0
+    while(n!=0):
+        rem=n%10
+        sum=sum+(rem*rem*rem)
+        n//=10
+    if(temp==sum):
+        print("Armstrong")
+    else:
+        print("Not Armsrong")
+num=int(input("Enter the integer :"))
+armstrong=arm(num)
