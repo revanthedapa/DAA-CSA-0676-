@@ -1,0 +1,10 @@
+def gcd(n,m):
+    if(m==0):
+        return n
+    else:
+        return gcd(m,n%m)
+
+n=30
+m=45
+GCD=gcd(n,m)
+print(GCD)
